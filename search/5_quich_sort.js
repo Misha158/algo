@@ -27,5 +27,5 @@ function quickSort(array) {
   return [...quickSort(less), pivot, ...quickSort(greater)];
 }
 
-console.log(quickSort(arr)); // O(log n)
+console.log(quickSort(arr)); // O(n * log n)
 console.log("count", count);

@@ -1,5 +1,4 @@
 const factorial = (n) => {
-  // debugger;
   if (n === 1) {
     return 1;
   }

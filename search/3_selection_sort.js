@@ -4,6 +4,8 @@ const arr = [
 ]; // [0,1,1,2,3.......]
 let count = 0;
 
+// Бежим по всему массиву и если есть элемент, который меньше - то меняем местами
+
 function selectionSort(array) {
   for (let i = 0; i < array.length; i++) {
     let indexMin = i;
@@ -13,9 +15,11 @@ function selectionSort(array) {
       }
       count += 1;
     }
-    let tmp = array[i];
-    array[i] = array[indexMin];
-    array[indexMin] = tmp;
+    // let tmp = array[i];
+    // array[i] = array[indexMin];
+    // array[indexMin] = tmp;
+
+    [array[i], array[indexMin]] = [array[indexMin], array[i]];
   }
   return array;
 }
